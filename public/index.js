@@ -14,7 +14,6 @@ textArea.addEventListener("input", () => {
 });
 
 function fillpuzzle(data) {
-  console.log('got to fillpuzzle')
   let len = data.length < 81 ? data.length : 81;
   for (let i = 0; i < len; i++) {
     let rowLetter = String.fromCharCode('A'.charCodeAt(0) + Math.floor(i / 9));
@@ -59,7 +58,6 @@ async function getChecked() {
   const parsed = await data.json();
   errorMsg.innerHTML = `<code>${JSON.stringify(parsed, null, 2)}</code>`;
 }
-
 
 document.getElementById("solve-button").addEventListener("click", getSolved)
 document.getElementById("check-button").addEventListener("click", getChecked)

@@ -1,7 +1,7 @@
 {
   "name": "sudoku-solver",
   "version": "2.0.0",
-  "description": "Quality Assurance 4: Sudoku Solver",
+  "description": "sudoku-solver",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
